@@ -27,15 +27,15 @@ const UserForm = () => {
             password: "",
             confirmPassword: ""
         }
-        setFirstName = "";
-        setLastName = "";
-        setEmail = "";
-        setPassword = "";
-        setConfirmPassword = "";
+        setFirstName("")
+        setLastName("")
+        setEmail("")
+        setPassword("")
+        setConfirmPassword("")
     }
 
     return(
-        <form onSubmit="createUser">
+        <form onSubmit={createUser}>
             <div>
                 <label>First Name: </label>
                 <input type="text" value={firstName} onChange={ (e) => {setFirstName(e.target.value)}}/>
